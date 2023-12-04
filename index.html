@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#48a14d" />
   <meta charset="UTF-8">
   <title>SCORE BOARD</title>
   <link rel="stylesheet" href="style.css">
   <script src="script.js"></script>
 </head>
-
-
-
 
 <body>
 
@@ -19,31 +18,34 @@
     <p id="firstTeamScore">0</p>
     <div class="btn-container">
       <button onclick="increase('firstTeam')" >
-        +
+        <i class="fa fa-plus" aria-hidden="true"></i>
       </button>
       <button onclick="decrease('firstTeam')" id="disable1">
-        -
+        <i class="fa fa-minus" aria-hidden="true"></i>
       </button>     
     </div>    
   </div>
    
    
    
-   <p class="versus"> VS. </p> 
+   <p class="versus"> VS </p> 
   
   <div class="team">
     <h2> Team B</h2>
     <p id="secondTeamScore">0</p>
     <div class="btn-container">
       <button onclick="increase('secondTeam')">
-        +
+        <i class="fa fa-plus" aria-hidden="true"></i>
       </button>
-      <button onclick="decrease('secondTeam')" id="disable2">-
+      <button onclick="decrease('secondTeam')" id="disable2">
+        <i class="fa fa-minus" aria-hidden="true"></i>
       </button>     
     </div>   
   </div>
   
-  <div class="reset-container"><button class="reset" onclick="resetScore()">Reset</button></div>
+  <div class="reset-container"><button class="reset" onclick="resetScore()">
+    Reset <i class="fa fa-clock-o" aria-hidden="true"></i>
+  </button></div>
 </div>
 </body>
 </html>
